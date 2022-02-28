@@ -83,7 +83,8 @@ export const Nav = styled.nav`
 export const NavListWrap = styled.ul`
   display: flex;
   flex-wrap: nowrap;
-  list-style-type: none;
+  /* list-style-type: none; */
+
   .active {
     span:after {
       content: "";
@@ -102,19 +103,21 @@ export const NavListWrap = styled.ul`
 export const NavList = styled.li`
   display: flex;
   align-items: center;
+
   a {
-    align-items: center;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    font-weight: 400;
-    justify-content: center;
-    line-height: 1.5;
-    min-height: 52px;
-    min-width: 80px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
     text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    min-width: 80px;
+    min-height: 52px;
+    line-height: 1.5;
+
     span {
       color: rgba(0, 0, 0, 0.6);
       display: flex;
@@ -135,23 +138,29 @@ export const NavList = styled.li`
 `;
 
 export const SignOut = styled.div`
-  position: absolute;
-  top: 45px;
-  background: white;
-  border-radius: 0 0 5px 5px;
-  width: 100px;
-  height: 40px;
-  font-size: 16px;
-  transition-duration: 167ms;
-  text-align: center;
   display: none;
+  text-align: center;
+  position: absolute;
+  top: 52px;
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 3px;
+  background: #636e72;
+  transition-duration: 167ms;
+
+  a {
+    color: #fff;
+    font-weight: 600;
+  }
 `;
 
 export const User = styled(NavList)`
-  a > svg {
+  /* a > svg {
     width: 24px;
     border-radius: 50%;
-  }
+  } */
+
   a > img {
     width: 24px;
     height: 24px;

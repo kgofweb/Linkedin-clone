@@ -4,6 +4,9 @@ import {
   Logo,
   Nav,
   NavList,
+  User,
+  SignOut,
+  Work,
   NavListWrap,
   Search,
   SearchIcon
@@ -63,6 +66,28 @@ const Header = () => {
                 <span>Notifications</span>
               </Link>
             </NavList>
+
+            <User>
+              <Link>
+                <img src="/images/user.svg" alt="user" />
+                <span>Me</span>
+                {/* <img src="/images/down-icon.svg" alt="" /> */}
+              </Link>
+
+              <SignOut>
+                <Link>Sign Out</Link>
+              </SignOut>
+           </User>
+
+           <Work>
+              <Link>
+                <img src="/images/nav-work.svg" alt="" />
+                <span>
+                  Work
+                  <img src="/images/down-icon.svg" alt="" />
+                </span>
+              </Link>
+            </Work>
           </NavListWrap>
         </Nav>
       </Content>
